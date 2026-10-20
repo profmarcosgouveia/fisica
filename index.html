@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
@@ -145,165 +144,221 @@
         </div>
     </section>
 
-    <!-- SEÇÃO 1: TEORIAS E RESUMOS DA AULA -->
+    <!-- SEÇÃO 1: TEORIAS E RESUMOS DA AULA COM SUBGRUPOS DE ARQUIVOS -->
     <section id="teoria" class="py-20 bg-slate-900/60 border-y border-slate-800/80 relative z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-14">
                 <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Base Teórica</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Material Teórico e Resumos</h2>
-                <p class="text-slate-400 max-w-xl mx-auto mt-3">Estude os conceitos fundamentais antes de resolver as listas de exercícios.</p>
+                <p class="text-slate-400 max-w-xl mx-auto mt-3">Clique em um dos tópicos abaixo para abrir e acessar os arquivos de cada assunto.</p>
             </div>
 
-            <!-- Card de Teoria com Múltiplos Arquivos -->
-<div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/50 transition-all group">
-    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-        <i class="fa-solid fa-car-side"></i>
-    </div>
-    <span class="text-xs font-semibold text-cyan-400 uppercase">Cinemática & Dinâmica</span>
-    <h3 class="text-xl font-bold text-white mt-1 mb-2">Mecânica Clássica</h3>
-    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-        Faça o download dos materiais teóricos deste módulo:
-    </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+                
+                <!-- Card Módulo 1: Mecânica Clássica (Agrupado por Subtópicos) -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-car-side"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-cyan-400 uppercase tracking-wider block">Módulo 01</span>
+                            <h3 class="text-xl font-bold text-white">Mecânica Clássica</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-xs mb-5 leading-relaxed">
+                        Selecione o assunto desejado para visualizar e baixar os materiais teóricos específicos:
+                    </p>
 
-    <!-- LISTA DE ARQUIVOS PARA DOWNLOAD -->
-    <div class="space-y-2 border-t border-slate-800/80 pt-4">
-        <!-- Arquivo 1 -->
-        <a href="Acao_Reacao.pdf" target="_blank" class="flex items-center gap-2 text-xs font-bold text-slate-200 hover:text-cyan-400 p-2.5 bg-slate-950 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition-all">
-            <i class="fa-solid fa-file-pdf text-red-400 text-sm"></i>
-            <span>3ª Lei de Newton - Ação e Reação</span>
-        </a>
+                    <!-- Lista de Subgrupos Sanfona (Mecânica) -->
+                    <div class="space-y-3">
+                        <!-- Subgrupo 1: Cinemática -->
+                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
+                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
+                                <span class="flex items-center gap-2 text-cyan-400">
+                                    <i class="fa-solid fa-folder"></i> Cinemática
+                                </span>
+                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
+                                <a href="cinematica-mu-muv.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Resumo - MU e MUV
+                                </a>
+                                <a href="cinematica-graficos.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Análise de Gráficos do Movimento
+                                </a>
+                            </div>
+                        </details>
 
-        <!-- Arquivo 2 -->
-        <a href="Cinematica_linear.pdf" target="_blank" class="flex items-center gap-2 text-xs font-bold text-slate-200 hover:text-cyan-400 p-2.5 bg-slate-950 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition-all">
-            <i class="fa-solid fa-file-pdf text-red-400 text-sm"></i>
-            <span>Cinemática Linear</span>
-        </a>
+                        <!-- Subgrupo 2: Dinâmica -->
+                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
+                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
+                                <span class="flex items-center gap-2 text-cyan-400">
+                                    <i class="fa-solid fa-folder"></i> Dinâmica
+                                </span>
+                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
+                                <a href="dinamica-leis-de-newton.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Leis de Newton & Forças
+                                </a>
+                                <a href="dinamica-atrito-plano-inclinado.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Força de Atrito e Plano Inclinado
+                                </a>
+                            </div>
+                        </details>
 
-        <!-- Arquivo 3 -->
-        <a href="Movimento_obliquo.pdf" target="_blank" class="flex items-center gap-2 text-xs font-bold text-slate-200 hover:text-cyan-400 p-2.5 bg-slate-950 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition-all">
-            <i class="fa-solid fa-file-pdf text-red-400 text-sm"></i>
-            <span>Movimento Oblíquo</span>
-        </a>
-      
-        <!-- Arquivo 4 -->
-        <a href="Energia_Mecanica.pdf" target="_blank" class="flex items-center gap-2 text-xs font-bold text-slate-200 hover:text-cyan-400 p-2.5 bg-slate-950 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition-all">
-            <i class="fa-solid fa-file-pdf text-red-400 text-sm"></i>
-            <span>Energia Mecânica</span>
-        </a>
-
-        <!-- Arquivo 5 -->
-        <a href="Empuxo.pdf" target="_blank" class="flex items-center gap-2 text-xs font-bold text-slate-200 hover:text-cyan-400 p-2.5 bg-slate-950 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition-all">
-            <i class="fa-solid fa-file-lines text-cyan-400 text-sm"></i>
-            <span>Formulário e Tabela de Equações</span>
-        </a>
-    </div>
-</div>
-
-                <!-- Card Teórico 2 -->
-              <!-- CARD DE MECÂNICA CLÁSSICA COM SUBGRUPOS (EXPANSÍVEIS) -->
-<div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
-    
-    <!-- Cabeçalho do Módulo -->
-    <div class="flex items-center gap-3 mb-4">
-        <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
-            <i class="fa-solid fa-car-side"></i>
-        </div>
-        <div>
-            <span class="text-xs font-semibold text-cyan-400 uppercase tracking-wider block">1º ANO - Ensino Médio</span>
-            <h3 class="text-xl font-bold text-white">Mecânica Clássica</h3>
-        </div>
-    </div>
-    
-    <p class="text-slate-400 text-xs mb-4">Clique no assunto desejado para visualizar e baixar os materiais:</p>
-
-    <!-- LISTA DE SUBGRUPOS -->
-    <div class="space-y-3">
-
-        <!-- SUBGRUPO 1: CINEMÁTICA -->
-        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                <span class="flex items-center gap-2 text-cyan-400">
-                    <i class="fa-solid fa-folder"></i> 1. Cinemática
-                </span>
-                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-            </summary>
-            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                <a href="cinematica-mu-muv.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                    <i class="fa-solid fa-file-pdf text-red-400"></i> Resumo - MU e MUV
-                </a>
-                <a href="cinematica-graficos.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                    <i class="fa-solid fa-file-pdf text-red-400"></i> Análise de Gráficos do Movimento
-                </a>
-            </div>
-        </details>
-
-        <!-- SUBGRUPO 2: DINÂMICA -->
-        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                <span class="flex items-center gap-2 text-cyan-400">
-                    <i class="fa-solid fa-folder"></i> 2. Dinâmica
-                </span>
-                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-            </summary>
-            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                <a href="dinamica-leis-de-newton.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                    <i class="fa-solid fa-file-pdf text-red-400"></i> 1ª, 2ª e 3ª Leis de Newton
-                </a>
-                <a href="dinamica-atrito-plano-inclinado.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                    <i class="fa-solid fa-file-pdf text-red-400"></i> Força de Atrito e Plano Inclinado
-                </a>
-            </div>
-        </details>
-
-        <!-- SUBGRUPO 3: ENERGIA -->
-        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                <span class="flex items-center gap-2 text-cyan-400">
-                    <i class="fa-solid fa-folder"></i> 3. Trabalho e Energia
-                </span>
-                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-            </summary>
-            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                <a href="energia-cinetica-potencial.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                    <i class="fa-solid fa-file-pdf text-red-400"></i> Energia Cinética e Potencial
-                </a>
-                <a href="energia-conservacao.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                    <i class="fa-solid fa-file-pdf text-red-400"></i> Princípio da Conservação da Energia
-                </a>
-            </div>
-        </details>
-
-    </div>
-</div>
-                <!-- Card Teórico 3 -->
-              <!-- SUBGRUPOS EM CAIXAS FIXAS -->
-<div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-    <h3 class="text-xl font-bold text-white mb-4">Mecânica Clássica</h3>
-
-    <!-- Subgrupo Cinemática -->
-    <div class="mb-4">
-        <h4 class="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-2">Cinemática</h4>
-        <div class="space-y-1.5 pl-3 border-l-2 border-cyan-500/30">
-            <a href="cinematica-resumo.pdf" target="_blank" class="block text-xs text-slate-300 hover:text-cyan-400">
-                • Resumo de Movimento Uniforme (PDF)
-            </a>
-            <a href="cinematica-graficos.pdf" target="_blank" class="block text-xs text-slate-300 hover:text-cyan-400">
-                • Análise de Gráficos (PDF)
-            </a>
-        </div>
-    </div>
-
-    <!-- Subgrupo Dinâmica -->
-    <div class="mb-4">
-        <h4 class="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-2">Dinâmica</h4>
-        <div class="space-y-1.5 pl-3 border-l-2 border-cyan-500/30">
-            <a href="dinamica-leis.pdf" target="_blank" class="block text-xs text-slate-300 hover:text-cyan-400">
-                • Leis de Newton (PDF)
-            </a>
-        </div>
-    </div>
-</div>
+                        <!-- Subgrupo 3: Energia -->
+                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
+                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
+                                <span class="flex items-center gap-2 text-cyan-400">
+                                    <i class="fa-solid fa-folder"></i> Trabalho e Energia
+                                </span>
+                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
+                                <a href="energia-cinetica-potencial.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Energia Cinética e Potencial
+                                </a>
+                                <a href="energia-conservacao.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Princípio da Conservação de Energia
+                                </a>
+                            </div>
+                        </details>
+                    </div>
                 </div>
+
+                <!-- Card Módulo 2: Termofísica e Ondulatória -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-temperature-three-quarters"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider block">Módulo 02</span>
+                            <h3 class="text-xl font-bold text-white">Termofísica & Ondas</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-xs mb-5 leading-relaxed">
+                        Selecione o assunto desejado para visualizar e baixar os materiais teóricos específicos:
+                    </p>
+
+                    <!-- Lista de Subgrupos Sanfona (Termofísica/Ondas) -->
+                    <div class="space-y-3">
+                        <!-- Subgrupo 1: Termologia & Calorimetria -->
+                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
+                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
+                                <span class="flex items-center gap-2 text-blue-400">
+                                    <i class="fa-solid fa-folder"></i> Termometria & Calor
+                                </span>
+                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
+                                <a href="escalas-termometricas.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Escalas Termométricas e Dilatação
+                                </a>
+                                <a href="calorimetria-mudanca-fase.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Calorimetria e Mudança de Fase
+                                </a>
+                            </div>
+                        </details>
+
+                        <!-- Subgrupo 2: Termodinâmica -->
+                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
+                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
+                                <span class="flex items-center gap-2 text-blue-400">
+                                    <i class="fa-solid fa-folder"></i> Termodinâmica
+                                </span>
+                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
+                                <a href="leis-da-termodinamica.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> 1ª e 2ª Leis da Termodinâmica
+                                </a>
+                            </div>
+                        </details>
+
+                        <!-- Subgrupo 3: Ondulatória -->
+                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
+                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
+                                <span class="flex items-center gap-2 text-blue-400">
+                                    <i class="fa-solid fa-folder"></i> Ondulatória
+                                </span>
+                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
+                                <a href="ondas-caracteristicas.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Equação Fundamental das Ondas
+                                </a>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- Card Módulo 3: Eletromagnetismo -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider block">Módulo 03</span>
+                            <h3 class="text-xl font-bold text-white">Eletromagnetismo</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-xs mb-5 leading-relaxed">
+                        Selecione o assunto desejado para visualizar e baixar os materiais teóricos específicos:
+                    </p>
+
+                    <!-- Lista de Subgrupos Sanfona (Eletromagnetismo) -->
+                    <div class="space-y-3">
+                        <!-- Subgrupo 1: Eletrostática -->
+                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
+                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
+                                <span class="flex items-center gap-2 text-indigo-400">
+                                    <i class="fa-solid fa-folder"></i> Eletrostática
+                                </span>
+                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
+                                <a href="carga-campo-eletrico.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Carga Elétrica e Lei de Coulomb
+                                </a>
+                            </div>
+                        </details>
+
+                        <!-- Subgrupo 2: Eletrodinâmica -->
+                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
+                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
+                                <span class="flex items-center gap-2 text-indigo-400">
+                                    <i class="fa-solid fa-folder"></i> Circuitos Elétricos
+                                </span>
+                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
+                                <a href="leis-de-ohm-circuitos.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Leis de Ohm e Associação de Resistores
+                                </a>
+                            </div>
+                        </details>
+
+                        <!-- Subgrupo 3: Magnetismo -->
+                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
+                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
+                                <span class="flex items-center gap-2 text-indigo-400">
+                                    <i class="fa-solid fa-folder"></i> Magnetismo & Indução
+                                </span>
+                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
+                                <a href="campo-magnetico-inducao.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Campo Magnético e Força Magnética
+                                </a>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -362,7 +417,7 @@
                     </div>
                     <h3 class="text-lg font-bold text-white mb-2">Lista 01: Cinemática e MRUV</h3>
                     <p class="text-slate-400 text-xs mb-4">Exercícios de fixação sobre velocidade média e equações do movimento.</p>
-                    <a href="#" target="_blank" class="w-full py-2.5 bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+                    <a href="lista1-cinematica.pdf" target="_blank" class="w-full py-2.5 bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
                         <i class="fa-solid fa-download"></i> Baixar Lista em PDF
                     </a>
                 </div>
@@ -375,7 +430,7 @@
                     </div>
                     <h3 class="text-lg font-bold text-white mb-2">Lista 02: Termometria e Calorimetria</h3>
                     <p class="text-slate-400 text-xs mb-4">Questões teóricas e práticas sobre trocas de calor e mudança de fase.</p>
-                    <a href="#" target="_blank" class="w-full py-2.5 bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+                    <a href="lista2-termo.pdf" target="_blank" class="w-full py-2.5 bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
                         <i class="fa-solid fa-download"></i> Baixar Lista em PDF
                     </a>
                 </div>
@@ -388,7 +443,7 @@
                     </div>
                     <h3 class="text-lg font-bold text-white mb-2">Lista Aprofundada: Circuitos Elétricos</h3>
                     <p class="text-slate-400 text-xs mb-4">Exercícios no estilo ENEM e vestibulares com geradores e resistores.</p>
-                    <a href="#" target="_blank" class="w-full py-2.5 bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+                    <a href="lista3-circuitos.pdf" target="_blank" class="w-full py-2.5 bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
                         <i class="fa-solid fa-download"></i> Baixar Lista em PDF
                     </a>
                 </div>
@@ -401,7 +456,7 @@
                     </div>
                     <h3 class="text-lg font-bold text-white mb-2">Lista 01: Dinâmica & Leis de Newton</h3>
                     <p class="text-slate-400 text-xs mb-4">Resolução de problemas de atrito, plano inclinado e tração em cordas.</p>
-                    <a href="#" target="_blank" class="w-full py-2.5 bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+                    <a href="lista1-dinamica.pdf" target="_blank" class="w-full py-2.5 bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
                         <i class="fa-solid fa-download"></i> Baixar Lista em PDF
                     </a>
                 </div>
@@ -472,7 +527,7 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <!-- Canal WhatsApp -->
-                <a href="https://wa.me/5535998265510" target="_blank" class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-emerald-500/50 transition-all flex flex-col items-center">
+                <a href="https://wa.me/5500000000000" target="_blank" class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-emerald-500/50 transition-all flex flex-col items-center">
                     <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-3">
                         <i class="fa-brands fa-whatsapp"></i>
                     </div>
@@ -481,7 +536,7 @@
                 </a>
 
                 <!-- Canal E-mail -->
-                <a href="mailto:marcos.gouveia@educacao.mg.gov.br" class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-cyan-500/50 transition-all flex flex-col items-center">
+                <a href="mailto:profmarcosgouveia@email.com" class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-cyan-500/50 transition-all flex flex-col items-center">
                     <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-3">
                         <i class="fa-regular fa-envelope"></i>
                     </div>
