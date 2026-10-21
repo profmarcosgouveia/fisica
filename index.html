@@ -48,34 +48,38 @@
                 </a>
 
                 <!-- Links Desktop -->
-                <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <div class="hidden lg:flex items-center gap-6 text-sm font-medium">
                     <a href="#inicio" class="text-slate-300 hover:text-cyan-400 transition-colors">Início</a>
-                    <a href="#teoria" class="text-slate-300 hover:text-cyan-400 transition-colors">Teorias e Resumos</a>
-                    <a href="#exercicios" class="text-slate-300 hover:text-cyan-400 transition-colors">Listas de Exercícios</a>
-                    <a href="#avisos" class="text-slate-300 hover:text-cyan-400 transition-colors">Avisos Importantes</a>
+                    <a href="#teoria" class="text-slate-300 hover:text-cyan-400 transition-colors">Teorias</a>
+                    <a href="#videoaulas" class="text-slate-300 hover:text-cyan-400 transition-colors">Videoaulas</a>
+                    <a href="#exercicios" class="text-slate-300 hover:text-cyan-400 transition-colors">Exercícios</a>
+                    <a href="#avisos" class="text-slate-300 hover:text-cyan-400 transition-colors">Avisos</a>
+                    <a href="#faq" class="text-slate-300 hover:text-cyan-400 transition-colors">Dúvidas</a>
                     <a href="#contato" class="px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition-all shadow-md shadow-cyan-500/20">
                         Contato
                     </a>
                 </div>
 
                 <!-- Botão Mobile -->
-                <button id="menu-btn" class="md:hidden p-2 text-slate-400 hover:text-white">
+                <button id="menu-btn" class="lg:hidden p-2 text-slate-400 hover:text-white">
                     <i class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
 
         <!-- Menu Mobile -->
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
             <a href="#inicio" class="block py-2 text-slate-300 hover:text-cyan-400">Início</a>
             <a href="#teoria" class="block py-2 text-slate-300 hover:text-cyan-400">Teorias e Resumos</a>
+            <a href="#videoaulas" class="block py-2 text-slate-300 hover:text-cyan-400">Videoaulas</a>
             <a href="#exercicios" class="block py-2 text-slate-300 hover:text-cyan-400">Listas de Exercícios</a>
             <a href="#avisos" class="block py-2 text-slate-300 hover:text-cyan-400">Avisos Importantes</a>
+            <a href="#faq" class="block py-2 text-slate-300 hover:text-cyan-400">Dúvidas Frequentes</a>
             <a href="#contato" class="block py-2 text-cyan-400 font-bold">Contato</a>
         </div>
     </nav>
 
-    <!-- BANNER PRINCIPAL (HERO) COM ILUSTRAÇÃO -->
+    <!-- BANNER PRINCIPAL (HERO) -->
     <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -89,12 +93,12 @@
                         A Física e a Matemática <span class="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent">descomplicadas</span>
                     </h1>
                     <p class="mt-6 text-base sm:text-lg text-slate-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                        Bem-vindo ao portal do <strong>Prof. Marcos Gouveia</strong>. Baixe resumos teóricos de Física e Matemática, receba as listas de exercícios específicas da sua escola e fique atento aos avisos das avaliações.
+                        Bem-vindo ao portal do <strong>Prof. Marcos Gouveia</strong>. Baixe resumos teóricos de Física e Matemática, acesse videoaulas completas e encontre as listas de exercícios específicas para o seu ano escolar.
                     </p>
                     
                     <div class="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
                         <a href="#exercicios" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 font-bold text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 transition-all flex items-center gap-2">
-                            <i class="fa-solid fa-file-pen"></i> Acessar Exercícios
+                            <i class="fa-solid fa-magnifying-glass"></i> Buscar Listas
                         </a>
                         <a href="#teoria" class="px-6 py-3.5 rounded-xl bg-slate-900 border border-slate-700 font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition-all flex items-center gap-2">
                             <i class="fa-solid fa-book-open"></i> Ver Teorias
@@ -109,20 +113,15 @@
                             Ciência & Exatas
                         </div>
                         
-                        <!-- Desenho Vetorial -->
                         <div class="py-6 flex justify-center">
                             <svg class="w-64 h-64 text-cyan-400 animate-pulse" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Núcleo Atômico -->
                                 <circle cx="100" cy="100" r="16" fill="url(#grad-nucleus)" />
-                                <!-- Órbitas -->
                                 <ellipse cx="100" cy="100" rx="80" ry="30" stroke="#06b6d4" stroke-width="2" transform="rotate(30 100 100)" stroke-dasharray="6 6"/>
                                 <ellipse cx="100" cy="100" rx="80" ry="30" stroke="#3b82f6" stroke-width="2" transform="rotate(-30 100 100)"/>
                                 <ellipse cx="100" cy="100" rx="80" ry="30" stroke="#6366f1" stroke-width="2" transform="rotate(90 100 100)"/>
-                                <!-- Elétrons -->
                                 <circle cx="165" cy="120" r="6" fill="#22d3ee" />
                                 <circle cx="35" cy="80" r="6" fill="#60a5fa" />
                                 <circle cx="100" cy="20" r="6" fill="#818cf8" />
-                                <!-- Fórmulas e Vetores -->
                                 <text x="120" y="50" fill="#94a3b8" font-size="10" font-family="sans-serif" font-weight="bold">E = mc²</text>
                                 <text x="25" y="160" fill="#94a3b8" font-size="10" font-family="sans-serif" font-weight="bold">f(x) = ax²</text>
                                 <text x="130" y="175" fill="#94a3b8" font-size="10" font-family="sans-serif" font-weight="bold">v = λ·f</text>
@@ -144,13 +143,13 @@
         </div>
     </section>
 
-    <!-- SEÇÃO 1: TEORIAS E RESUMOS DA AULA COM SUBGRUPOS DE ARQUIVOS (FÍSICA + MATEMÁTICA) -->
+    <!-- SEÇÃO 1: TEORIAS E RESUMOS DA AULA COM SUBGRUPOS + PDFS DE OUTROS AUTORES -->
     <section id="teoria" class="py-20 bg-slate-900/60 border-y border-slate-800/80 relative z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-14">
                 <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Base Teórica</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Material Teórico e Resumos</h2>
-                <p class="text-slate-400 max-w-xl mx-auto mt-3">Clique em um dos tópicos abaixo para abrir e acessar os arquivos de cada assunto de Física e Matemática.</p>
+                <p class="text-slate-400 max-w-xl mx-auto mt-3">Clique em um dos tópicos abaixo para acessar meus materiais e também indicações de materiais de outros autores.</p>
             </div>
 
             <!-- BLOCO 1: MÓDULOS DE FÍSICA -->
@@ -172,9 +171,6 @@
                             <h3 class="text-xl font-bold text-white">Mecânica Clássica</h3>
                         </div>
                     </div>
-                    <p class="text-slate-400 text-xs mb-5 leading-relaxed">
-                        Selecione o assunto desejado para visualizar e baixar os materiais teóricos específicos:
-                    </p>
 
                     <div class="space-y-3">
                         <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
@@ -186,11 +182,17 @@
                             </summary>
                             <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
                                 <a href="cinematica-mu-muv.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Resumo - MU e MUV
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Resumo - MU e MUV (Prof. Marcos)
                                 </a>
-                                <a href="cinematica-graficos.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Análise de Gráficos do Movimento
-                                </a>
+                                <!-- Espaço para PDFs de Outros Autores -->
+                                <div class="mt-2 pt-2 border-t border-slate-800/80">
+                                    <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider block mb-1">
+                                        <i class="fa-solid fa-book-bookmark"></i> Materiais Complementares (Outros Autores)
+                                    </span>
+                                    <a href="outro-autor-cinematica.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-400 hover:text-amber-300 p-1.5 rounded-lg hover:bg-slate-800/40 transition-colors">
+                                        <i class="fa-solid fa-file-pdf text-amber-400"></i> Apostila de Cinemática - Autor Externo
+                                    </a>
+                                </div>
                             </div>
                         </details>
 
@@ -203,11 +205,16 @@
                             </summary>
                             <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
                                 <a href="dinamica-leis-de-newton.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Leis de Newton & Forças
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Leis de Newton & Forças (Prof. Marcos)
                                 </a>
-                                <a href="dinamica-atrito-plano-inclinado.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Força de Atrito e Plano Inclinado
-                                </a>
+                                <div class="mt-2 pt-2 border-t border-slate-800/80">
+                                    <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider block mb-1">
+                                        <i class="fa-solid fa-book-bookmark"></i> Materiais Complementares (Outros Autores)
+                                    </span>
+                                    <a href="outro-autor-dinamica.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-400 hover:text-amber-300 p-1.5 rounded-lg hover:bg-slate-800/40 transition-colors">
+                                        <i class="fa-solid fa-file-pdf text-amber-400"></i> Artigo Leis de Newton - Autor Externo
+                                    </a>
+                                </div>
                             </div>
                         </details>
 
@@ -220,11 +227,16 @@
                             </summary>
                             <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
                                 <a href="energia-cinetica-potencial.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Energia Cinética e Potencial
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Conservação de Energia (Prof. Marcos)
                                 </a>
-                                <a href="energia-conservacao.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Princípio da Conservação de Energia
-                                </a>
+                                <div class="mt-2 pt-2 border-t border-slate-800/80">
+                                    <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider block mb-1">
+                                        <i class="fa-solid fa-book-bookmark"></i> Materiais Complementares (Outros Autores)
+                                    </span>
+                                    <a href="outro-autor-energia.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-400 hover:text-amber-300 p-1.5 rounded-lg hover:bg-slate-800/40 transition-colors">
+                                        <i class="fa-solid fa-file-pdf text-amber-400"></i> Texto Ilustrado de Energia - Outros Autores
+                                    </a>
+                                </div>
                             </div>
                         </details>
                     </div>
@@ -241,9 +253,6 @@
                             <h3 class="text-xl font-bold text-white">Termofísica & Ondas</h3>
                         </div>
                     </div>
-                    <p class="text-slate-400 text-xs mb-5 leading-relaxed">
-                        Selecione o assunto desejado para visualizar e baixar os materiais teóricos específicos:
-                    </p>
 
                     <div class="space-y-3">
                         <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
@@ -255,39 +264,16 @@
                             </summary>
                             <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
                                 <a href="escalas-termometricas.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Escalas Termométricas e Dilatação
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Escalas e Calorimetria (Prof. Marcos)
                                 </a>
-                                <a href="calorimetria-mudanca-fase.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Calorimetria e Mudança de Fase
-                                </a>
-                            </div>
-                        </details>
-
-                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                                <span class="flex items-center gap-2 text-blue-400">
-                                    <i class="fa-solid fa-folder"></i> Termodinâmica
-                                </span>
-                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                                <a href="leis-da-termodinamica.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> 1ª e 2ª Leis da Termodinâmica
-                                </a>
-                            </div>
-                        </details>
-
-                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                                <span class="flex items-center gap-2 text-blue-400">
-                                    <i class="fa-solid fa-folder"></i> Ondulatória
-                                </span>
-                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                                <a href="ondas-caracteristicas.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Equação Fundamental das Ondas
-                                </a>
+                                <div class="mt-2 pt-2 border-t border-slate-800/80">
+                                    <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider block mb-1">
+                                        <i class="fa-solid fa-book-bookmark"></i> Materiais Complementares (Outros Autores)
+                                    </span>
+                                    <a href="outro-autor-termo.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-400 hover:text-amber-300 p-1.5 rounded-lg hover:bg-slate-800/40 transition-colors">
+                                        <i class="fa-solid fa-file-pdf text-amber-400"></i> Guia Teórico de Termodinâmica - Autor Externo
+                                    </a>
+                                </div>
                             </div>
                         </details>
                     </div>
@@ -304,25 +290,8 @@
                             <h3 class="text-xl font-bold text-white">Eletromagnetismo</h3>
                         </div>
                     </div>
-                    <p class="text-slate-400 text-xs mb-5 leading-relaxed">
-                        Selecione o assunto desejado para visualizar e baixar os materiais teóricos específicos:
-                    </p>
 
                     <div class="space-y-3">
-                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                                <span class="flex items-center gap-2 text-indigo-400">
-                                    <i class="fa-solid fa-folder"></i> Eletrostática
-                                </span>
-                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                                <a href="carga-campo-eletrico.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Carga Elétrica e Lei de Coulomb
-                                </a>
-                            </div>
-                        </details>
-
                         <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
                             <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
                                 <span class="flex items-center gap-2 text-indigo-400">
@@ -332,22 +301,16 @@
                             </summary>
                             <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
                                 <a href="leis-de-ohm-circuitos.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Leis de Ohm e Associação de Resistores
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Leis de Ohm (Prof. Marcos)
                                 </a>
-                            </div>
-                        </details>
-
-                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                                <span class="flex items-center gap-2 text-indigo-400">
-                                    <i class="fa-solid fa-folder"></i> Magnetismo & Indução
-                                </span>
-                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                                <a href="campo-magnetico-inducao.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-cyan-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Campo Magnético e Força Magnética
-                                </a>
+                                <div class="mt-2 pt-2 border-t border-slate-800/80">
+                                    <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider block mb-1">
+                                        <i class="fa-solid fa-book-bookmark"></i> Materiais Complementares (Outros Autores)
+                                    </span>
+                                    <a href="outro-autor-eletricidade.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-400 hover:text-amber-300 p-1.5 rounded-lg hover:bg-slate-800/40 transition-colors">
+                                        <i class="fa-solid fa-file-pdf text-amber-400"></i> Eschema de Circuitos - Autor Externo
+                                    </a>
+                                </div>
                             </div>
                         </details>
                     </div>
@@ -374,59 +337,27 @@
                             <h3 class="text-xl font-bold text-white">Matemática I</h3>
                         </div>
                     </div>
-                    <p class="text-slate-400 text-xs mb-5 leading-relaxed">
-                        Selecione o assunto desejado para visualizar e baixar os materiais teóricos específicos:
-                    </p>
 
                     <div class="space-y-3">
                         <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
                             <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
                                 <span class="flex items-center gap-2 text-emerald-400">
-                                    <i class="fa-solid fa-folder"></i> Conjuntos & Funções
+                                    <i class="fa-solid fa-folder"></i> Funções & Trigonometria
                                 </span>
                                 <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
                             </summary>
                             <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                                <a href="mat-conjuntos-e-funcoes.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Teoria dos Conjuntos e Noção de Função
-                                </a>
                                 <a href="mat-funcoes-1-2-grau.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Funções do 1º e 2º Grau (Afim e Quadrática)
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Estudo das Funções (Prof. Marcos)
                                 </a>
-                            </div>
-                        </details>
-
-                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                                <span class="flex items-center gap-2 text-emerald-400">
-                                    <i class="fa-solid fa-folder"></i> Trigonometria
-                                </span>
-                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                                <a href="mat-trigonometria-triangulo.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Trigonometria no Triângulo Retângulo
-                                </a>
-                                <a href="mat-circulo-trigonometrico.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Ciclo Trigonométrico & Funções Seno/Cosseno
-                                </a>
-                            </div>
-                        </details>
-
-                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                                <span class="flex items-center gap-2 text-emerald-400">
-                                    <i class="fa-solid fa-folder"></i> Sequências (PA e PG)
-                                </span>
-                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                                <a href="mat-progressao-aritmetica.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Progressão Aritmética (PA) - Termo Geral e Soma
-                                </a>
-                                <a href="mat-progressao-geometrica.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Progressão Geométrica (PG) e Aplicações
-                                </a>
+                                <div class="mt-2 pt-2 border-t border-slate-800/80">
+                                    <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider block mb-1">
+                                        <i class="fa-solid fa-book-bookmark"></i> Materiais Complementares (Outros Autores)
+                                    </span>
+                                    <a href="outro-autor-funcoes.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-400 hover:text-amber-300 p-1.5 rounded-lg hover:bg-slate-800/40 transition-colors">
+                                        <i class="fa-solid fa-file-pdf text-amber-400"></i> Tabela de Funções - Autor Externo
+                                    </a>
+                                </div>
                             </div>
                         </details>
                     </div>
@@ -443,9 +374,6 @@
                             <h3 class="text-xl font-bold text-white">Matemática II</h3>
                         </div>
                     </div>
-                    <p class="text-slate-400 text-xs mb-5 leading-relaxed">
-                        Selecione o assunto desejado para visualizar e baixar os materiais teóricos específicos:
-                    </p>
 
                     <div class="space-y-3">
                         <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
@@ -457,45 +385,16 @@
                             </summary>
                             <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
                                 <a href="mat-geometria-prismas.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Áreas e Volumes: Prismas e Pirâmides
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Áreas e Volumes (Prof. Marcos)
                                 </a>
-                                <a href="mat-corpos-redondos.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Cilindros, Cones e Esferas
-                                </a>
-                            </div>
-                        </details>
-
-                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                                <span class="flex items-center gap-2 text-teal-400">
-                                    <i class="fa-solid fa-folder"></i> Análise Combinatória
-                                </span>
-                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                                <a href="mat-fatorial-arranjos.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Princípio Fundamental da Contagem & Permutações
-                                </a>
-                                <a href="mat-combinacoes.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Arranjos Simples e Combinações
-                                </a>
-                            </div>
-                        </details>
-
-                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                                <span class="flex items-center gap-2 text-teal-400">
-                                    <i class="fa-solid fa-folder"></i> Probabilidade & Estatística
-                                </span>
-                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                                <a href="mat-probabilidade-conceitos.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Espaço Amostral, Eventos e Probabilidade
-                                </a>
-                                <a href="mat-estatistica-medias.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Médias (Aritmética e Ponderada), Moda e Mediana
-                                </a>
+                                <div class="mt-2 pt-2 border-t border-slate-800/80">
+                                    <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider block mb-1">
+                                        <i class="fa-solid fa-book-bookmark"></i> Materiais Complementares (Outros Autores)
+                                    </span>
+                                    <a href="outro-autor-geometria.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-400 hover:text-amber-300 p-1.5 rounded-lg hover:bg-slate-800/40 transition-colors">
+                                        <i class="fa-solid fa-file-pdf text-amber-400"></i> Formulário de Geometria Espacial - Outro Autor
+                                    </a>
+                                </div>
                             </div>
                         </details>
                     </div>
@@ -512,9 +411,6 @@
                             <h3 class="text-xl font-bold text-white">Matemática III</h3>
                         </div>
                     </div>
-                    <p class="text-slate-400 text-xs mb-5 leading-relaxed">
-                        Selecione o assunto desejado para visualizar e baixar os materiais teóricos específicos:
-                    </p>
 
                     <div class="space-y-3">
                         <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
@@ -526,45 +422,16 @@
                             </summary>
                             <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
                                 <a href="mat-ponto-e-reta.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Distância entre Pontos & Estudo da Reta
+                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Estudo da Reta (Prof. Marcos)
                                 </a>
-                                <a href="mat-circunferencia.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Equação Geral da Circunferência
-                                </a>
-                            </div>
-                        </details>
-
-                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                                <span class="flex items-center gap-2 text-purple-400">
-                                    <i class="fa-solid fa-folder"></i> Matrizes & Sistemas Lineares
-                                </span>
-                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                                <a href="mat-matrizes-determinantes.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Operações com Matrizes e Determinantes
-                                </a>
-                                <a href="mat-sistemas-lineares.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Resolução de Sistemas Lineares
-                                </a>
-                            </div>
-                        </details>
-
-                        <details class="group bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
-                            <summary class="flex justify-between items-center p-3 text-xs font-bold text-white cursor-pointer hover:bg-slate-800/50 transition-colors select-none">
-                                <span class="flex items-center gap-2 text-purple-400">
-                                    <i class="fa-solid fa-folder"></i> Números Complexos & Polinômios
-                                </span>
-                                <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <div class="p-3 pt-1 border-t border-slate-800/60 space-y-2 bg-slate-900/40">
-                                <a href="mat-numeros-complexos.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Forma Algébrica e Trigonométrica de Complexos
-                                </a>
-                                <a href="mat-polinomios-equacoes.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 p-2 rounded-lg hover:bg-slate-800/60 transition-colors">
-                                    <i class="fa-solid fa-file-pdf text-red-400"></i> Operações Polinomiais e Divisão de Briot-Ruffini
-                                </a>
+                                <div class="mt-2 pt-2 border-t border-slate-800/80">
+                                    <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider block mb-1">
+                                        <i class="fa-solid fa-book-bookmark"></i> Materiais Complementares (Outros Autores)
+                                    </span>
+                                    <a href="outro-autor-analitica.pdf" target="_blank" class="flex items-center gap-2 text-xs text-slate-400 hover:text-amber-300 p-1.5 rounded-lg hover:bg-slate-800/40 transition-colors">
+                                        <i class="fa-solid fa-file-pdf text-amber-400"></i> Resumo Geometria Analítica - Outro Autor
+                                    </a>
+                                </div>
                             </div>
                         </details>
                     </div>
@@ -574,19 +441,69 @@
         </div>
     </section>
 
-    <!-- SEÇÃO 2: LISTAS DE EXERCÍCIOS POR ESCOLA, ANO E DISCIPLINA -->
-    <section id="exercicios" class="py-20 relative z-10">
+    <!-- SEÇÃO NOVA: VIDEOAULAS -->
+    <section id="videoaulas" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-red-400 text-xs font-bold uppercase tracking-widest">Conteúdo em Vídeo</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Videoaulas e Explicações</h2>
+                <p class="text-slate-400 max-w-xl mx-auto mt-2">Assista às resoluções passo a passo e explicações teóricas gravadas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Vídeo 1 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-red-500/40 transition-all">
+                    <div class="aspect-video bg-slate-950 flex items-center justify-center relative">
+                        <!-- Substitua o src abaixo pelo ID do vídeo do YouTube quando disponível -->
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/placeholder" title="Videoaula Física" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-5">
+                        <span class="px-2.5 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-bold rounded-lg border border-cyan-500/20">Física • Cinemática</span>
+                        <h3 class="text-base font-bold text-white mt-3 mb-1">Revisão de MRU e MRUV para Provas</h3>
+                        <p class="text-slate-400 text-xs">Resolução detalhada dos principais exercícios de fixação.</p>
+                    </div>
+                </div>
+
+                <!-- Vídeo 2 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-red-500/40 transition-all">
+                    <div class="aspect-video bg-slate-950 flex items-center justify-center relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/placeholder" title="Videoaula Matemática" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-5">
+                        <span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-lg border border-emerald-500/20">Matemática • Funções</span>
+                        <h3 class="text-base font-bold text-white mt-3 mb-1">Como Interpretar Gráficos do 2º Grau</h3>
+                        <p class="text-slate-400 text-xs">Aprenda a encontrar o vértice e as raízes da parábola de forma simples.</p>
+                    </div>
+                </div>
+
+                <!-- Vídeo 3 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-red-500/40 transition-all">
+                    <div class="aspect-video bg-slate-950 flex items-center justify-center relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/placeholder" title="Videoaula Eletricidade" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-5">
+                        <span class="px-2.5 py-1 bg-indigo-500/10 text-indigo-400 text-xs font-bold rounded-lg border border-indigo-500/20">Física • Eletricidade</span>
+                        <h3 class="text-base font-bold text-white mt-3 mb-1">Associação de Resistores em Série e Paralelo</h3>
+                        <p class="text-slate-400 text-xs">Dicas práticas para calcular a resistência equivalente rapidamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: LISTAS DE EXERCÍCIOS POR ESCOLA, ANO E DISCIPLINA (PAINEL LIMPO) -->
+    <section id="exercicios" class="py-20 bg-slate-900/60 border-y border-slate-800 relative z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Atividades Didáticas</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Listas de Exercícios</h2>
                 <p class="text-slate-400 max-w-xl mx-auto mt-2">
-                    Filtre abaixo as listas por <strong>Escola</strong>, <strong>Ano/Série</strong> e <strong>Disciplina</strong> para encontrar o material desejado.
+                    Utilize as opções abaixo para pesquisar e carregar as listas de exercícios da sua turma.
                 </p>
             </div>
 
             <!-- Painel de Filtros de Busca -->
-            <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl max-w-4xl mx-auto mb-10 shadow-xl">
+            <div class="bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-2xl max-w-4xl mx-auto mb-8 shadow-xl">
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     
                     <!-- 1º Filtro: Escola -->
@@ -595,7 +512,7 @@
                             1. Escola:
                         </label>
                         <select id="select-escola" onchange="filtrarExercicios()" class="w-full bg-slate-950 border border-slate-700 text-white rounded-xl p-3 text-sm focus:outline-none focus:border-cyan-500">
-                            <option value="todas">Todas as Escolas</option>
+                            <option value="">Selecione a Escola...</option>
                             <option value="escola-a">Colégio Estadual (Escola A)</option>
                             <option value="escola-b">Instituto Particular (Escola B)</option>
                         </select>
@@ -607,7 +524,7 @@
                             2. Ano/Série:
                         </label>
                         <select id="select-ano" onchange="filtrarExercicios()" class="w-full bg-slate-950 border border-slate-700 text-white rounded-xl p-3 text-sm focus:outline-none focus:border-cyan-500">
-                            <option value="todos">Todos os Anos</option>
+                            <option value="">Selecione o Ano...</option>
                             <option value="1ano">1º Ano do Ensino Médio</option>
                             <option value="2ano">2º Ano do Ensino Médio</option>
                             <option value="3ano">3º Ano do Ensino Médio</option>
@@ -620,7 +537,7 @@
                             3. Disciplina:
                         </label>
                         <select id="select-disciplina" onchange="filtrarExercicios()" class="w-full bg-slate-950 border border-slate-700 text-white rounded-xl p-3 text-sm focus:outline-none focus:border-cyan-500">
-                            <option value="todas">Todas as Disciplinas</option>
+                            <option value="">Selecione a Disciplina...</option>
                             <option value="fisica">Física</option>
                             <option value="matematica">Matemática</option>
                         </select>
@@ -629,11 +546,18 @@
                 </div>
             </div>
 
-            <!-- GRADE DINÂMICA DE CARDS DE EXERCÍCIOS -->
+            <!-- MENSAGEM INICIAL DE INSTRUÇÃO (Exibida por padrão enquanto nenhuma busca for feita) -->
+            <div id="mensagem-inicial-exercicios" class="text-center py-12 px-4 border-2 border-dashed border-slate-800 rounded-2xl max-w-4xl mx-auto">
+                <i class="fa-solid fa-filter text-slate-600 text-4xl mb-3 block"></i>
+                <h3 class="text-slate-300 font-bold mb-1">Pronto para buscar?</h3>
+                <p class="text-slate-400 text-sm">Selecione a Escola, o Ano/Série e a Disciplina acima para listar os arquivos de exercícios disponíveis.</p>
+            </div>
+
+            <!-- GRADE DINÂMICA DE CARDS DE EXERCÍCIOS (Aparece apenas ao filtrar) -->
             <div id="grid-exercicios" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 <!-- Card 1: Física - 1º Ano (Escola A) -->
-                <div class="card-exercicio bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/40 transition-all" data-escola="escola-a" data-ano="1ano" data-disciplina="fisica">
+                <div class="card-exercicio hidden bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/40 transition-all" data-escola="escola-a" data-ano="1ano" data-disciplina="fisica">
                     <div class="flex justify-between items-start mb-3">
                         <span class="px-2.5 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-bold rounded-lg border border-cyan-500/20">Física • Colégio Estadual</span>
                         <span class="text-xs text-slate-400 font-semibold">1º Ano</span>
@@ -646,7 +570,7 @@
                 </div>
 
                 <!-- Card 2: Matemática - 1º Ano (Escola A) -->
-                <div class="card-exercicio bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/40 transition-all" data-escola="escola-a" data-ano="1ano" data-disciplina="matematica">
+                <div class="card-exercicio hidden bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/40 transition-all" data-escola="escola-a" data-ano="1ano" data-disciplina="matematica">
                     <div class="flex justify-between items-start mb-3">
                         <span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-lg border border-emerald-500/20">Matemática • Colégio Estadual</span>
                         <span class="text-xs text-slate-400 font-semibold">1º Ano</span>
@@ -659,7 +583,7 @@
                 </div>
 
                 <!-- Card 3: Física - 2º Ano (Escola A) -->
-                <div class="card-exercicio bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/40 transition-all" data-escola="escola-a" data-ano="2ano" data-disciplina="fisica">
+                <div class="card-exercicio hidden bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/40 transition-all" data-escola="escola-a" data-ano="2ano" data-disciplina="fisica">
                     <div class="flex justify-between items-start mb-3">
                         <span class="px-2.5 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-bold rounded-lg border border-cyan-500/20">Física • Colégio Estadual</span>
                         <span class="text-xs text-slate-400 font-semibold">2º Ano</span>
@@ -672,7 +596,7 @@
                 </div>
 
                 <!-- Card 4: Matemática - 2º Ano (Escola B) -->
-                <div class="card-exercicio bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/40 transition-all" data-escola="escola-b" data-ano="2ano" data-disciplina="matematica">
+                <div class="card-exercicio hidden bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/40 transition-all" data-escola="escola-b" data-ano="2ano" data-disciplina="matematica">
                     <div class="flex justify-between items-start mb-3">
                         <span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-lg border border-emerald-500/20">Matemática • Instituto Particular</span>
                         <span class="text-xs text-slate-400 font-semibold">2º Ano</span>
@@ -685,7 +609,7 @@
                 </div>
 
                 <!-- Card 5: Física - 3º Ano (Escola B) -->
-                <div class="card-exercicio bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/40 transition-all" data-escola="escola-b" data-ano="3ano" data-disciplina="fisica">
+                <div class="card-exercicio hidden bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/40 transition-all" data-escola="escola-b" data-ano="3ano" data-disciplina="fisica">
                     <div class="flex justify-between items-start mb-3">
                         <span class="px-2.5 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-bold rounded-lg border border-cyan-500/20">Física • Instituto Particular</span>
                         <span class="text-xs text-slate-400 font-semibold">3º Ano</span>
@@ -698,7 +622,7 @@
                 </div>
 
                 <!-- Card 6: Matemática - 3º Ano (Escola B) -->
-                <div class="card-exercicio bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/40 transition-all" data-escola="escola-b" data-ano="3ano" data-disciplina="matematica">
+                <div class="card-exercicio hidden bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/40 transition-all" data-escola="escola-b" data-ano="3ano" data-disciplina="matematica">
                     <div class="flex justify-between items-start mb-3">
                         <span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-lg border border-emerald-500/20">Matemática • Instituto Particular</span>
                         <span class="text-xs text-slate-400 font-semibold">3º Ano</span>
@@ -715,7 +639,7 @@
     </section>
 
     <!-- SEÇÃO 3: AVISOS IMPORTANTES -->
-    <section id="avisos" class="py-20 bg-slate-900/60 border-y border-slate-800 relative z-10">
+    <section id="avisos" class="py-20 relative z-10">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">Quadro de Recados</span>
@@ -724,8 +648,6 @@
             </div>
 
             <div class="space-y-4">
-                
-                <!-- Aviso 1 -->
                 <div class="bg-slate-900 border-l-4 border-amber-500 border-y border-r border-slate-800 p-6 rounded-r-2xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                     <div>
                         <div class="flex items-center gap-2 mb-1">
@@ -743,7 +665,6 @@
                     </div>
                 </div>
 
-                <!-- Aviso 2 -->
                 <div class="bg-slate-900 border-l-4 border-cyan-500 border-y border-r border-slate-800 p-6 rounded-r-2xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                     <div>
                         <div class="flex items-center gap-2 mb-1">
@@ -760,7 +681,59 @@
                         <span class="text-lg font-extrabold text-cyan-400">Terças (14h)</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- SEÇÃO NOVA: DÚVIDAS FREQUENTES (FAQ) -->
+    <section id="faq" class="py-20 bg-slate-900/60 border-y border-slate-800 relative z-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Tire Suas Dúvidas</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Perguntas Frequentes</h2>
+                <p class="text-slate-400 text-sm mt-2">Confira as respostas para as dúvidas mais comuns dos alunos.</p>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group bg-slate-900 border border-slate-800 rounded-2xl p-5 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-white text-base select-none">
+                        <span>1. Como posso enviar meus trabalhos escolares solicitados?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Os trabalhos devem ser enviados preferencialmente em formato PDF para o e-mail institucional do professor (marcos.gouveia@educacao.mg.gov.br) ou entregues em mãos no dia estipulado na aula.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-900 border border-slate-800 rounded-2xl p-5 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-white text-base select-none">
+                        <span>2. Posso utilizar calculadoras nas avaliações?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        O uso de calculadora simples é permitido em avaliações específicas previamente avisadas no quadro de avisos. O uso de celulares não é permitido durante as avaliações.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-900 border border-slate-800 rounded-2xl p-5 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-white text-base select-none">
+                        <span>3. Como funciona a monitoria de atendimento presencial?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        A monitoria ocorre nas terças-feiras no laboratório de ciências. Não é necessário agendar com antecedência, basta comparecer com suas dúvidas e listas de exercícios.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-900 border border-slate-800 rounded-2xl p-5 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-white text-base select-none">
+                        <span>4. Os PDFs de outros autores disponibilizados possuem licença gratuita?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Sim. Todos os arquivos de terceiros publicados nos subgrupos são materiais de domínio público, artigos acadêmicos ou resumos educativos disponibilizados para fins exclusivamente didáticos.
+                    </p>
+                </details>
             </div>
         </div>
     </section>
@@ -805,7 +778,12 @@
         </div>
     </footer>
 
-    <!-- LÓGICA DE FILTRAGEM MULTIVARIÁVEL E MENU MOBILE -->
+    <!-- BOTÃO FLUTUANTE VOLTAR AO TOPO -->
+    <a href="#inicio" id="btn-topo" class="fixed bottom-6 right-6 w-12 h-12 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold flex items-center justify-center shadow-lg shadow-cyan-500/30 transition-all z-50 hover:scale-110">
+        <i class="fa-solid fa-arrow-up text-lg"></i>
+    </a>
+
+    <!-- LÓGICA DE FILTRAGEM DINÂMICA E MENU MOBILE -->
     <script>
         // Menu Mobile Toggle
         const btnMenu = document.getElementById('menu-btn');
@@ -815,24 +793,38 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Função de Filtro Aninhado (Escola + Ano/Série + Disciplina)
+        // Função de Filtro Dinâmico de Exercícios (Mostra resultados somente ao selecionar)
         function filtrarExercicios() {
             const escolaSelecionada = document.getElementById('select-escola').value;
             const anoSelecionado = document.getElementById('select-ano').value;
             const disciplinaSelecionada = document.getElementById('select-disciplina').value;
+            const mensagemInicial = document.getElementById('mensagem-inicial-exercicios');
             const cards = document.querySelectorAll('.card-exercicio');
+
+            // Se nenhum filtro foi selecionado, mantém a mensagem inicial e esconde os cards
+            if (!escolaSelecionada && !anoSelecionado && !disciplinaSelecionada) {
+                mensagemInicial.classList.remove('hidden');
+                cards.forEach(card => card.classList.add('hidden'));
+                return;
+            }
+
+            // Oculta a mensagem inicial de instrução
+            mensagemInicial.classList.add('hidden');
+
+            let encontrouAlgum = false;
 
             cards.forEach(card => {
                 const cardEscola = card.getAttribute('data-escola');
                 const cardAno = card.getAttribute('data-ano');
                 const cardDisciplina = card.getAttribute('data-disciplina');
 
-                const combinaEscola = (escolaSelecionada === 'todas' || cardEscola === escolaSelecionada);
-                const combinaAno = (anoSelecionado === 'todos' || cardAno === anoSelecionado);
-                const combinaDisciplina = (disciplinaSelecionada === 'todas' || cardDisciplina === disciplinaSelecionada);
+                const combinaEscola = (!escolaSelecionada || cardEscola === escolaSelecionada);
+                const combinaAno = (!anoSelecionado || cardAno === anoSelecionado);
+                const combinaDisciplina = (!disciplinaSelecionada || cardDisciplina === disciplinaSelecionada);
 
                 if (combinaEscola && combinaAno && combinaDisciplina) {
                     card.classList.remove('hidden');
+                    encontrouAlgum = true;
                 } else {
                     card.classList.add('hidden');
                 }
